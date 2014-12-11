@@ -80,7 +80,7 @@ function render(csv) {
 		.dimension(kwgrp)
 		.group(kwgrpgroup)
 		.renderTitle(true)
-		.colors(d3.scale.category20b())
+		.colors(d3.scale.category10())
 		.xAxis()
 		.ticks(4);
 
@@ -90,7 +90,7 @@ function render(csv) {
 		.dimension(searchengine)
 		.group(searchenginegroup)
 		.renderTitle(true)
-		.colors(d3.scale.category20b())
+		.colors(d3.scale.category10())
 		.xAxis()
 		.ticks(4);
 
@@ -106,7 +106,7 @@ function render(csv) {
 		.seriesAccessor(function(d){return d.key[0];})
 		.keyAccessor(function(d){return d.key[1];})
 		.valueAccessor(function(d){return d.value.avg;})
-		.colors(d3.scale.category20b())
+		.colors(d3.scale.category10())
 		// .legend(dc.legend().x(-5).y(10).itemHeight(13).gap(5))
 		.brushOn(false);
 
