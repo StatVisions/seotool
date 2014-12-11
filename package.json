@@ -1,0 +1,29 @@
+{
+  "name": "TableauConversion",
+  "version": "0.0.0",
+  "description": "Source code for SEO Visualization",
+  "keywords": [
+    "data visualization",
+    "tableau",
+    "crossfilter",
+    "d3js"
+  ],
+  "author": {
+    "name": "Mark Rios",
+    "url": "http://www.statvisions.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StatVisions/blast.git"
+  },
+  "dependencies": {
+      "d3":"3.4.11",
+      "crossfilter":"1.3.9",
+       "dc":"2.0.0-alpha.2",
+       "bootstrap":"3.2.0",
+       "jquery":"1.11.1",
+       "colorbrewer":"0.0.2"
+  },
+  "devDependencies": {},
+  "readmeFilename": "README.md"
+}

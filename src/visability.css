@@ -1,0 +1,67 @@
+.jumbotron {
+	background-color: #FFF;
+}
+/*for chart opacity is a little too dark with labels. it was originally .8+*/
+.dc-chart g.row rect {
+	fill-opacity:0.6;
+}
+.dc-chart g.row text {
+	font-size: 1.7rem;
+	font-style: normal;
+	font-variant: small-caps;
+}
+.jumbotron g.row text {
+	fill: rgba(51, 49, 49, 0.86);
+}
+.dc-chart rect.deselected {
+	fill:rgba(204, 204, 204, 0.4);
+}
+a.reset {
+	display:inherit;
+}
+
+.dc-chart text.pie-slice{
+	font-size: 1.3rem;
+	font-style: normal;
+	fill: rgba(51, 49, 49, 0.86);
+}
+
+.dc-chart g.pie-slice path {
+	fill-opacity:0.4;
+}
+
+.dc-chart .grid-line {
+	opacity:0;
+}
+
+/*DC Charts Data Table*/
+
+tr.dc-table-row:nth-of-type(odd) { background-color: rgba(114, 114, 114, .02);}
+tr.dc-table-row:nth-of-type(even) {background-color: rgba(114, 114,114,.15);}
+
+table#list {
+    width:100%;
+}
+
+tr.header th {
+        text-align: right;
+}
+
+td.dc-table-label {
+    background-color: SlateGray;
+    color:white;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+td.dc-table-column {
+    padding-left: 1%;
+    padding-right:1%;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+
+td.dc-table-column{
+    text-align: right;
+}

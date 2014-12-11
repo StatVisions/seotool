@@ -1,0 +1,46 @@
+
+
+
+internal calls (do not document)
+
+plotData
+fadeDeselectedArea
+extendBrush
+legendHighlight
+legendReset
+legendToggle
+isLegendableHidden
+redrawGroup
+replaceFilter
+isSelectedNode
+yAxisMin
+yAxisMax
+renderXAxis
+renderYAxisLabel
+renderYAxisAt
+renderYAxis
+renderBrush
+doUpdateTitles
+cappedKeyAccessor
+cappedValueAccessor
+
+
+
+Issues
+fixes #290: document all public API methods. we don't have automatic verification though.
+fixes #615: handling undefined/null values was implemented but not documented
+fixes #610: disabling heatmap cell corner roundeed was implemented but not documented
+fixes #441: document dc.filters
+
+
+ | compositeChart
+
+ If the *** chart is a sub-chart in a [Composite Chart](#composite-chart) then pass in the parent composite
+ chart instance.
+
+* parent : string | node | selection - any valid
+ [d3 single selector](https://github.com/mbostock/d3/wiki/Selections#selecting-elements) specifying
+ a dom block element such as a div; or a dom element or d3 selection.
+
+* chartGroup : string (optional) - name of the chart group this chart instance should be placed in.
+ Interaction with a chart will only trigger events and redraws within the chart's group.
