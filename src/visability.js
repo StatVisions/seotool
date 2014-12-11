@@ -57,7 +57,7 @@ function render(csv) {
 		.dimension(website)
 		.group(websitegroup)
 		.renderTitle(true)
-		.colors(d3.scale.category20b())
+		.colors(d3.scale.category10())
 		.xAxis()
 		.ticks(4);
 
